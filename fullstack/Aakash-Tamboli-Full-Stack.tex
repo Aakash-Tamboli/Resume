@@ -1,0 +1,218 @@
+
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+\usetikzlibrary{svg.path}
+
+% Colors
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{cvblue}
+\colorlet{heading}{cvblue}
+\colorlet{headingrule}{cvblue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\pdfgentounicode=1
+
+% Section formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large\bfseries\color{cvblue}
+}{}{0em}{}[\color{headingrule}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large#1} & \textbf{\small #2} \\
+    \textit{\large#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small #2}\\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Resume starts here
+\begin{document}
+
+%-----------HEADING-----------
+\begin{center}
+  {\Huge \scshape Aakash Tamboli} \\ \vspace{1pt}
+  Indore, (M.P) \\ \vspace{1pt}
+  \small
+  \href{tel:+7000384145}{\faPhone\ \underline{+91-7000384145}} ~
+  \href{mailto:aakash.devx@gmail.com}{\faEnvelope\ \underline{aakash.devx@gmail.com}} ~
+  \href{https://www.linkedin.com/in/aakashtamboli/}{\faLinkedin\ \underline{linkedin.com/in/aakashtamboli}} ~
+  \href{https://github.com/Aakash-Tamboli}{\faGithub\ \underline{Aakash-Tamboli}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{SUMMARY}
+Backend-focused Software Developer with hands-on experience building production-ready applications using Node.js and Express. Strong in REST API development, authentication and authorization, database design, and backend performance optimization. Seeking a backend or full-stack role to build reliable, scalable systems.
+
+
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {\href{https://www.ngtsindore.com/}{Next Gen Tech Services (NGTS)}}{Jul 2025 -- Jan 2026}
+  {Backend Developer}{India | Onsite}
+\vspace{-4pt}
+\resumeItemListStart
+  \resumeItem{Developed and maintained backend services using \textbf{Node.js, Express, WebSocket (Socket.io)}, and multiple databases including \textbf{MongoDB, PostgreSQL, MySQL, and Cosmos DB}.}
+  \resumeItem{Built scalable RESTful APIs and implemented secure authentication and authorization using \textbf{JWT} and \textbf{bcrypt}.}
+  \resumeItem{Integrated and maintained third-party services including \textbf{Fast2SMS}, payment gateways such as \textbf{Razorpay} and \textbf{Easebuzz}, \textbf{BBPS providers (Cyrus)}, and healthcare APIs, handling authentication, retries, error handling, and secure data exchange.}
+\resumeItemListEnd
+
+
+\vspace{2pt}
+
+\resumeSubheading
+  {\href{https://www.solvimate.com/}{Solvimate}}{Apr 2025 -- Jul 2025}
+  {Backend Engineer Intern}{India | Remote}
+\vspace{-4pt}
+\resumeItemListStart
+  \resumeItem{Contributed to backend development by designing scalable database schemas, implementing backend business logic, and integrating RESTful APIs to support smooth system workflows.}
+  \resumeItem{Played a key role in the \textbf{Teja Tool} project by building a Translation Management System that enabled submission, review, approval, rejection, and rework workflows for translators.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+
+% Project 1
+\resumeProjectHeading
+  {
+    \href{https://talktoamica.ai/}{
+      \textbf{\large{\underline{AMICA AI}}}
+    }
+  }{\large}
+\vspace{-8pt}
+
+\resumeItemListStart
+  \setlength{\itemsep}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\topsep}{0pt}
+  \setlength{\partopsep}{0pt}
+
+  \resumeItem{Contributed to backend development of an AI-driven application by building scalable APIs and managing server-side business logic.}
+  \resumeItem{Implemented API-based AI/chat workflows and backend data processing to support MVP-stage application functionality.}
+  \resumeItem{Developed backend services using \textbf{Node.js, Express, and Azure Cosmos DB (MongoDB API)} to ensure reliable and scalable application behavior.}
+\resumeItemListEnd
+
+
+
+
+\vspace{-6pt}
+
+% Project 2
+\resumeProjectHeading
+   {
+    {
+      \textbf{\large{\underline{Insaaf AI}}}
+    }
+  }{\large}
+\vspace{-8pt}
+\resumeItemListStart
+  \resumeItem{Developed backend services for a conversational AI platform enabling authenticated users to interact with an AI-powered chatbot.}
+  \resumeItem{Implemented secure authentication, request handling, and chat workflow management using \textbf{Node.js, JWT, and PostgreSQL}.}
+  \resumeItem{Worked closely with stakeholders to gather functional requirements and implemented scalable backend solutions aligned with business goals.}
+\resumeItemListEnd
+
+% Project 3
+\resumeProjectHeading
+  {
+    \textbf{\large{\underline{Reanent}}}~
+  }{\large}
+\vspace{-8pt}
+\resumeItemListStart
+  \resumeItem{Worked as a backend developer on a MERN-based property management platform enabling owners to list properties and tenants to manage tenancy workflows.}
+  \resumeItem{Designed scalable database schemas and built RESTful APIs to handle tenancy lifecycle, documents, payments, reminders, and notifications.}
+  \resumeItem{Integrated third-party services including \textbf{BBPS APIs} for bill payments, \textbf{Razorpay} for online transactions, and \textbf{Firebase} for real-time notifications.}
+  \resumeItem{Collaborated directly with clients to understand business requirements and translated them into efficient, scalable backend solutions.}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+
+%-----------TECH SKILLS-----------
+\section{TECH SKILLS}
+\begin{tabular}{l l l}
+  \textbf{Programming Languages} & \hspace{3em} & C, C++, Java, JavaScript, Python \\
+  \textbf{Backend Technologies} & \hspace{3em} & Node.js, Express.js, REST APIs, WebSocket (Socket.io), JWT, Bcrypt \\
+  \textbf{Databases \& Caching} & \hspace{3em} & MongoDB, PostgreSQL, MySQL, Azure Cosmos DB, \href{https://youtu.be/Vx2zPMPvmug}{Redis} \\
+  \textbf{Frontend (Basic)} & \hspace{3em} & HTML5, CSS3, Tailwind CSS, Bootstrap, React \\
+  \textbf{Tools \& Platforms} & \hspace{3em} & Git, GitHub, Docker, Postman, Linux, VS Code \\
+  \textbf{Concepts} & \hspace{3em} & Authentication \& Authorization, API Design, Database Design, MVC Architecture
+\end{tabular}
+
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Vikram University}{2022 -- 2024}
+    {Master of Computer Applications (MCA) - \textbf{CGPA: 8.40}}{Ujjain, India}
+
+  \resumeSubheading
+    {Makhanlal Chaturvedi National University}{2019 -- 2022}
+    {Bachelor of Computer Application (BCA) - \textbf{CGPA: 8.33}}{Bhopal, India}
+\resumeSubHeadingListEnd
+
+
+\end{document}
