@@ -1,0 +1,136 @@
+
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+\usetikzlibrary{svg.path}
+
+% Colors
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{cvblue}
+\colorlet{heading}{cvblue}
+\colorlet{headingrule}{cvblue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\pdfgentounicode=1
+
+% Section formatting
+\titleformat{\section}{
+\vspace{-4pt}\scshape\raggedright\large\bfseries\color{cvblue}
+}{}{0em}{}[\color{headingrule}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\large#1} & \textbf{\small #2} \\
+    \textit{\large#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small #2}\\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% Resume starts here
+\begin{document}
+
+%-----------HEADING-----------
+\begin{center}
+  {\Huge \scshape Aakash Tamboli} \\ \vspace{1pt}
+  Indore, (M.P) \\ \vspace{1pt}
+  \small
+  \href{tel:+7000384145}{\faPhone\ \underline{+91-7000384145}} ~
+  \href{mailto:aakash.devx@gmail.com}{\faEnvelope\ \underline{aakash.devx@gmail.com}} ~
+  \href{https://www.linkedin.com/in/aakashtamboli/}{\faLinkedin\ \underline{linkedin.com/in/aakashtamboli}} ~
+  \href{https://github.com/Aakash-Tamboli}{\faGithub\ \underline{Aakash-Tamboli}}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{SUMMARY}
+Backend-focused Software Developer with hands-on experience building production-ready applications using Node.js and Express. Strong in REST API development, authentication and authorization, database design, and backend performance optimization. Seeking a backend or full-stack role to build reliable, scalable systems.
+
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+\resumeSubHeadingListStart
+\resumeItem{Comming Soon}
+\resumeSubHeadingListEnd
+
+
+
+
+%-----------TECH SKILLS-----------
+\section{TECH SKILLS}
+\begin{tabularx}{\textwidth}{l @{\hspace{3em}} X}
+  \textbf{Programming Languages} & C, C++, Java, JavaScript, Python \\
+  \textbf{Backend Technologies} & Node.js, Express.js, WebSocket (Socket.io), JWT, Bcrypt \\
+  \textbf{Databases \& Caching} & MongoDB, PostgreSQL, MySQL, Azure Cosmos DB, \href{https://youtu.be/Vx2zPMPvmug}{Redis} \\
+  \textbf{Third-Party Integrations} & BBPS, Razorpay, Easebuzz, Fast2SMS, Firebase \\
+  \textbf{Frontend (Basic)} & HTML5, CSS3, Tailwind CSS, Bootstrap, React \\
+  \textbf{Tools \& Platforms} & Git, GitHub, Docker, Postman, Linux, VS Code, Cursor, Antigravity, Copilot \\
+  \textbf{Concepts} & Authentication \& Authorization, REST APIs Design, Database Design, MVC Architecture
+\end{tabularx}
+
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Vikram University}{2022 -- 2024}
+    {Master of Computer Applications (MCA) - \textbf{CGPA: 8.40}}{Ujjain, India}
+
+  \resumeSubheading
+    {Makhanlal Chaturvedi National University}{2019 -- 2022}
+    {Bachelor of Computer Application (BCA) - \textbf{CGPA: 8.33}}{Bhopal, India}
+\resumeSubHeadingListEnd
+
+
+\end{document}
