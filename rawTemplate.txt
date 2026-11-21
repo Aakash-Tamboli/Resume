@@ -1,0 +1,39 @@
+Header
+---
+
+
+Projects
+---
+
+
+
+Experience
+---
+Cozmotec:
+    RP
+
+    CB:
+        * Migrated Stage Dump to Prod and resolve version issue in postrgess (15 vs 18) and save 
+        * Fixed Parallel Refresh token issue with multiple tabs by applying transaction
+        * Fixed Client Auto logout issue by fixing Cookie domain problem.
+        * 
+
+    ILS(Learning System)
+
+
+
+NGTS:
+    Reffer to current and truncate
+
+
+
+
+
+Skills
+---
+
+
+Education
+---
+
+
